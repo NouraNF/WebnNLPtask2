@@ -1,0 +1,94 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: rgb(233, 229, 217);
+   }
+  
+  /* Header styles */
+  header {
+    font-family: fantasy;
+     font-style: initial; 
+     color: rgb(107, 6, 6);
+    padding: 20px;
+    text-align: center;
+    font-size:xx-large;
+    
+  }
+  
+
+  /* Main styles */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  
+  .control {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #815f5f;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgba(209, 174, 57, 0.699);
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+    font-family:fantasy;
+    font-style: italic;
+    opacity: 0.7;
+    text-decoration: wavy;
+   
+  }
+  
+  button:hover {
+    background-color:rgba(80, 4, 4, 0.479);
+    color: rgb(255, 255, 255);
+    font-family:fantasy;
+    font-style: italic;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .control {
+      width: 5px;
+      height: 10px;
+    }
+    
+    button {
+      font-size: 50px;
+      padding: 8px 16px;
+     
+  
+    }
+  }
